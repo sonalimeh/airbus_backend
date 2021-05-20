@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "==1.1.2"
+psycopg2-binary = "*"
+flask-script = "*"
+flask-migrate = "*"
+psycopg2 = "*"
+marshmallow = "*"
+flask-bcrypt = "*"
+pyjwt = "*"
+pymongo = {extras = ["srv"], version = "*"}
+chatterbot = "*"
+spacy = "==2.3.5"
+chatterbot-corpus = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
