@@ -70,6 +70,10 @@ class ChatBot(object):
             that the chat bot generates.
         :type persist_values_to_response: dict
         """
+        if(statement == "helpline number?" or statement == "Provide your helpline number"):
+            return "Our helpline no is +11100100. We are 24x7 available for you :)"
+        if(statement is "who are you?"):
+            return "I am a Konnex bot, who is just artificially intelligent"
         Statement = self.storage.get_object('statement')
 
         additional_response_selection_parameters = kwargs.pop('additional_response_selection_parameters', {})
